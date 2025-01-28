@@ -2,6 +2,7 @@
   "name": "add-function-to-directory",
   "displayName": "Add Function to Directory",
   "description": "Adds a function with default export to a directory, and updates the index.ts",
+  "author": "Slava Nossar",
   "repository": "slavanossar/add-function-to-directory",
   "version": "0.0.1",
   "engines": {
@@ -13,19 +14,13 @@
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "add-function-to-folder.createFunction",
-        "title": "Add Function to Folder",
-        "category": "Folder"
-      }
-    ],
     "menus": {
       "explorer/context": [
         {
-          "command": "add-function-to-folder.createFunction",
-          "when": "resourceFolder",
-          "group": "navigation"
+          "command": "add-function-to-directory.createFunction",
+          "title": "Add Function...",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation@99"
         }
       ]
     }

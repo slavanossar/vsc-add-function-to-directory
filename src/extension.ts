@@ -8,7 +8,7 @@ export function activate(context: vscode.ExtensionContext) {
   );
 
   const disposable = vscode.commands.registerCommand(
-    "add-function-to-directory.helloWorld",
+    "add-function-to-directory.createFunction",
     async (uri: vscode.Uri) => {
       const folderPath = uri.fsPath;
 
