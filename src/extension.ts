@@ -85,7 +85,7 @@ export function activate(context: vscode.ExtensionContext) {
         .sort((a, b) => a.localeCompare(b))
         .map((file) => {
           const name = path.basename(file, `.${fileExtension}`);
-          return `export { default as ${name} } from './${name}'`;
+          return `export { default as ${file} } from './${name}'`;
         });
 
       fs.writeFileSync(indexFilePath, exportLines.join("\n") + "\n");
