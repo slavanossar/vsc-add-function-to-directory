@@ -2,6 +2,7 @@
   "name": "add-function-to-directory",
   "displayName": "Add Function to Directory",
   "description": "Adds a function with default export to a directory, and updates the index.ts",
+  "repository": "slavanossar/add-function-to-directory",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.96.0"
