@@ -1,4 +1,4 @@
-# add-function-to-directory README
+# Add Function to Directory
 
 This is the README for your extension "add-function-to-directory". After writing up a brief description, we recommend including the following sections.
 
